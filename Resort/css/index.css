@@ -1,0 +1,436 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f8f9fa!important
+
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+
+img{
+  border-radius: 40px;
+}
+
+
+nav {
+  position: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {  
+  font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+.menu{
+  width: 100%;
+  height: 50px;
+  background-color: #1994d7;
+  font-family:'Arial';
+}
+
+.menu ul{
+  list-style: none;
+  position: relative;
+}
+
+.menu ul li{
+  width: 150px;
+  float: left;
+
+}
+
+.menu a {
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: #1994d7;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+
+}
+
+.menu ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+.menu ul  li:hover ul{
+  visibility: visible;
+}
+
+.menu a:hover{
+  background-color: #f4f4f4;
+  color: #555;
+}
+
+.menu ul ul li{
+  float: none;
+  border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a{
+  background-color: #1994d7;
+}
+
+label[for="bt_menu"]{
+  padding: 5px;
+  background-color: #1994d7;
+  color: #fff;
+  font-family: "Arial";
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+#bt_menu{
+  display: none;
+}
+
+label[for="bt_menu"]{
+  display: none;
+  position: fixed;
+}
+
+@media(max-width: 800px){
+label[for="bt_menu"]{
+  display: block;
+}
+
+#bt_menu:checked ~ .menu{
+  margin-left: 0;
+}
+
+.menu{
+  margin-top: 5px;
+  margin-left:  -100%;
+  transition: all .4s;
+}
+
+
+.menu ul li{
+  width: 100%;
+  float: none;
+}
+.menu ul ul {
+  position: static;
+  overflow: hidden;
+  max-height: 0;
+  transition: all .4s;
+}
+.menu ul li:hover ul{
+  height: auto;
+  max-height: 200px;
+
+}
+
+}
+
+
+
+/* -------------------------------------------------------------------------*/
+
+
+
+.container{
+   text-align: center;
+   margin: 0 auto;
+   max-width: 1110px;
+   position: static;
+ }
+
+section.sec1{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background: url('../img/magic_kingdom.jpg');
+  background-size: cover;
+  padding-top: 50px;
+  background-position: center center;
+  background-attachment: scroll;
+}
+
+.principal{
+    text-align: center;
+    padding: 250px 16px;
+
+}
+.principal h1{
+font-size: 50px;
+color: white;
+background-color: #1994d7;
+text-align: center;
+border-radius: 18px;
+opacity: 0.8;
+
+}
+
+.principal h2{
+    margin-top: 90px;
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    background-color: #1994d7;
+text-align: center;
+border-radius: 18px;
+opacity: 0.8;
+}
+
+
+
+
+.springs-text h2{
+  font-size: 50px;
+  margin: 80px auto;
+  font-weight: bold;
+}
+
+.springs-text p{
+
+  font-size: 20px;
+  margin: 80px 0;
+}
+.springs-text h3{
+  font-style: italic;
+  margin: 80px auto;
+  font-weight: bold;
+
+}
+
+
+.springs{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    padding-bottom: 40px;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+.springs h3{
+  margin: 20px auto;
+}
+
+.springs h4{
+    color: #6c757d;
+    font-family:'Segoe UI',sans-serif;
+    margin: 20px auto;
+
+}
+
+
+
+.parque-text h2{
+  font-size: 50px;
+  margin: 80px auto;
+  font-weight: bold;
+
+}
+
+.parque-text{
+    font-size: 20px;
+  margin: 80px 0;
+
+}
+
+
+.responsive{
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px;
+    padding-bottom: 10px;
+    max-width: 460px;
+
+    } /* Esta classe define a margem das imagens */
+
+
+.responsive h3 h4{
+    text-align: center;
+    margin: 0 auto;
+}
+.responsive h3{
+    margin: 20px 0;
+    font-size: 26px;
+
+}
+
+.responsive h4{
+    font-style: italic;
+    color: #6c757d;
+    margin: 0 auto;
+}
+
+.responsive img{
+  height: 100%;
+  width: 100%;
+}
+
+.resort-text{
+
+    height: 500px;
+    }
+
+.sobre-index{
+  max-width: 320px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 40px;
+
+ 
+}
+
+.sobre-index img{
+    border-radius: 200px;
+}
+
+.sobre-index h4{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+.sobre-index figcaption{
+  margin-top:  15px;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+
+
+
+
+.resort-index{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 20px;
+    padding-bottom: 10px;
+}
+
+.resort-index img{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.saiba p{
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+}
+.saiba a{
+  text-decoration: none;
+  color: #505660;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+
+    background-color: #1994d7;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    top: 10px;
+    left:0;
+    border-radius: 3px;
+
+}
+
+footer p{
+  padding-top: 5px;
+ 
+}
+
+
+
+
+.footer-r{
+
+width: 140px;
+float: left;
+margin-top: 20px;
+font-weight: bold;
+}
+
+.footer-r a{
+  display: inline-block;
+}
+
+.social a {
+
+   height: 55px;
+   width: 55px;
+
+   text-indent: -9999px;
+   margin-top: 5px;
+   margin-left: 8px;
+ }
+
+.social li{
+    display: inline;
+}
+
+.footer-l{
+width: 140px;
+float: right;
+margin-top: 20px;
+font-weight: bold;
+}
+
+.footer-l a{
+  display: inline-block;
+}
+
+.texto-footer p{
+  margin-top: 20px;
+}
+
+.social a[href*="youtube.com"] {
+    background-image: url(../img/youtube-icon1.png);
+    background-repeat: no-repeat;
+}
+
+
+.social a[href*="disneyparks.disney.go.com"] {
+    background-image: url(../img/blog-icon1.png);
+    background-repeat: no-repeat;
+}
+
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook-icon1.png);
+    background-repeat: no-repeat;
+}
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter-icon1.png);
+    background-repeat: no-repeat;
+
+}
+
+
